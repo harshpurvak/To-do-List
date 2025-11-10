@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: bisque;  
+}
+
+div#toDoListContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div#toDoListHeader {
+    font-size: 35px;
+    color: darkgreen;
+}
+
+input#taskInput {
+    min-width:473px;
+    border: 2px solid darkgreen;
+    border-radius: 5px; 
+    font-size: 20px;
+    padding: 8px 14px;
+}
+
+div#toDoForm {
+    margin: 15px 0px 0px 0px;
+}
+
+button#addTaskButton {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+div#taskList h2 {
+    font-size: 30px;
+    color: darkgreen;
+    margin: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: darkgreen;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  width: 800px;
+  color: white;
+}
+
+#taskList li button {
+  margin-left: 8px;
+  border: 1px solid darkgreen;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+  color: white;
+}
+
+#taskList li button:hover {
+  transform: scale(1.2);
+}
